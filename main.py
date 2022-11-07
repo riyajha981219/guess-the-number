@@ -20,6 +20,8 @@ class Guess:
 
         while go:
             guess = int(input("Guess the number between 1 and 10: "))
+            while guess not in range(1, 11, 1):
+                guess = int(input("Please enter valid input: "))
             print()
 
             """if you guessed right or not!!"""
